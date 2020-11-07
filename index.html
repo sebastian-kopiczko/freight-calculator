@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">ilość kilometrów</label>
+                          <input type="number" class="form-control" id="kilometers" value="1640">
+                        </div>
+                        <div class="form-group">
+                            opcjonalna - checkox
+                            <label for="exampleFormControlInput1">stała</label>
+                            <input disabled type="number" class="form-control disabled" value="1.03" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">km * stała</label>
+                            <input disabled type="number" class="form-control disabled" value="1800" id="exampleFormControlInput1">
+                        </div>
+                        
+                        <label for="basic-url">Stawka</label>
+                        <div class="input-group mb-3">
+                            <div class="radio" data-selected="">
+                                <label><input type="radio" name="optradio" checked>0.75</label>
+                              </div>
+                              <div class="radio">
+                                <label><input type="radio" name="optradio">0.78</label>
+                              </div>
+                              <div>
+                                <label class="checkbox-inline"><input type="checkbox" value="">Własna</label>
+                              </div>
+                              <div class="radio disabled">
+                                <label><input type="number" name="" disabled></label>
+                              </div>
+                          </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">prom</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        
+                        <div class="result">
+                            <h2>Wynik <span class="badge badge-success">1500 €</span></h2>
+                            +
+                            <div class="form-group  ">
+                                <label for="exampleFormControlInput1">grórka</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            = 
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">wynik+górka</label>
+                                <input type="number" disabled class="form-control disabled" vale="2000" id="exampleFormControlInput1">€
+                            </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="col-md-8">
+                    <div class="row"> 
+                        <div class="col-md-6">
+                            <h3>kilometry kierowcy:</h3>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">ilość kilometrów</label>
+                                <input type="number" class="form-control" id="kilometers" value="1640">
+                            </div>
+                            X
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">stawka</label>
+                                <input type="number" class="form-control" id="bid" value="0.78">
+                            </div>
+                            =
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">wynik kilometry kierowcy</label>
+                                <input type="number" class="form-control" id="result2" value="1300">
+                            </div>
+                        </div>
+                
+                        <div class="col-md-6">
+                            <h3>koszt przewoznika</h3>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">wynik kilometry kierowcy</label>
+                                <input disabled type="number" class="disabled form-control" id="result2" value="1300">
+                            </div>
+                            X
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">stawka</label>
+                                <input type="number" class="form-control" id="result2" value="0.78">
+                            </div>
+                            =
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">wynik koszt przewoźnika</label>
+                                <input type="number" class="form-control" id="result2" value="1000">€
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Oblicz trasę</h2>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Stawka</label>??
+                                        <input disabled type="number" class="disabled form-control"  value="???" id="kilometers">
+                                    </div>
+        
+                                </div>
+                                -
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">koszt przwoźnika + prom (Wynik) <span class="badge badge warning">ten z górką?</span></label>
+                                        <input disabled type="number" class="form-control disabled" value="" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                                =
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">wynik trasy</label>
+                                        <input disabled type="number" class="form-control disabled" value="1800" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OBLICZ TRASĘ -->
+                
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
